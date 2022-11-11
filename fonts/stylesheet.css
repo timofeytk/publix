@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Elowen';
+    src: url('Elowen.eot');
+    src: url('Elowen.eot?#iefix') format('embedded-opentype'),
+        url('Elowen.woff2') format('woff2'),
+        url('Elowen.woff') format('woff'),
+        url('Elowen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('ProductSans-Thin.eot');
+    src: url('ProductSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('ProductSans-Thin.woff2') format('woff2'),
+        url('ProductSans-Thin.woff') format('woff'),
+        url('ProductSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

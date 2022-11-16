@@ -90,6 +90,12 @@ body{
 .publix-contacts__info a:hover, .publix-contacts__info a:focus{
     color: #704986;
 }
+@media screen and (min-width: 1600px){
+    .publix-wrapper{
+        max-width: 70vh;
+        max-height: 70vh;
+    }
+}
 @media screen and (min-width: 992px){
     .publix-container{
         max-height: 100vh;

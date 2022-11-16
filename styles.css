@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Elowen';
-    src: url('Elowen.eot');
-    src: url('Elowen.eot?#iefix') format('embedded-opentype'),
-        url('Elowen.woff2') format('woff2'),
-        url('Elowen.woff') format('woff'),
-        url('Elowen.ttf') format('truetype');
+    src: url('./fonts/Elowen.eot');
+    src: url('./fonts/Elowen.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Elowen.woff2') format('woff2'),
+        url('./fonts/Elowen.woff') format('woff'),
+        url('./fonts/Elowen.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,11 +12,11 @@
 
 @font-face {
     font-family: 'Product Sans';
-    src: url('ProductSans-Thin.eot');
-    src: url('ProductSans-Thin.eot?#iefix') format('embedded-opentype'),
-        url('ProductSans-Thin.woff2') format('woff2'),
-        url('ProductSans-Thin.woff') format('woff'),
-        url('ProductSans-Thin.ttf') format('truetype');
+    src: url('./fonts/ProductSans-Thin.eot');
+    src: url('./fonts/ProductSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/ProductSans-Thin.woff2') format('woff2'),
+        url('./fonts/ProductSans-Thin.woff') format('woff'),
+        url('./fonts/ProductSans-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -25,19 +25,25 @@ html, body{
     padding: 0;
     margin: 0;
 }
+body{
+    overflow-y: hidden; 
+}
 .publix-block{
     background-image: url(./images/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 6.5em 0;
+    padding: 10px 0;
     background-position: center;
+    height: 100vh;
 }
 .publix-wrapper{
     background-color: #fff;
     border-radius: 50%;
-    padding: 2em;
-    width: 835px;
-    height: 835px;
+    padding: 1em 0em 1em 0em;
+    max-width: 90vh;
+    width: 100%;
+    height: 100%;
+    max-height: 90vh;
     margin: 0 auto;
 }
 .publix-contacts{
@@ -49,15 +55,15 @@ html, body{
 .publix-contacts__title{
     color: #704986;
     font-family: 'Elowen', sans-serif;
-    margin-top: 1.5em;
-    font-size: 42px;
+    margin-top: 1em;
+    font-size: 2rem;
     margin-bottom: 0.5em;
 }
 .publix-contacts__title.pct2{
     margin-top: 1.3em;
 }
 .publix-contacts__logo img{
-    width: 400px;
+    width: 20%;
     display: block;
     margin: 2em auto 1em;
 }
@@ -65,18 +71,16 @@ html, body{
     margin-bottom: 1em;
 }
 .publix-contacts__line p {
-    font-size: 24px;
+    font-size: 1.4rem;
     font-weight: 100;
     margin-bottom: 0;
     margin-top: 0;
-    line-height: 32px;
 }
 .publix-contacts__info{
     margin-bottom: 8px;
-    font-size: 24px;
+    font-size: 1.4rem;
     font-weight: 100;
     margin-top: 0;
-    line-height: 32px;
 }
 .publix-contacts__info a{
     text-decoration: none;
@@ -87,8 +91,8 @@ html, body{
     color: #704986;
 }
 @media screen and (min-width: 992px){
-    body{
-        height: 100vh;
+    .publix-container{
+        max-height: 100vh;
     }
 }
 @media screen and (max-width: 900px) {
@@ -98,13 +102,17 @@ html, body{
         border-radius: 0;
         padding: 1em;
     }
+    .publix-contacts__logo img{
+        width: 50%;
+    }
 }
+
 @media screen and (max-width: 576px){
     .publix-block{
         padding: 2em 0;
     }
     .publix-contacts__logo img{
-        width: 100%;
+        width: 70%;
     }
     .publix-contacts__line p, .publix-contacts__info{
         font-size: 18px;
